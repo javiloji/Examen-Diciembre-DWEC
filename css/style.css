@@ -1,6 +1,6 @@
 #formularioEmpleado{
     display: grid;
-    grid-template-columns: min-content min-content;
+    grid-template-columns: min-content min-content min-content;
     gap: 15px;
     margin-bottom: 50px;
     margin-top: 50px;
