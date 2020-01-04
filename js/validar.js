@@ -9,59 +9,13 @@
      * 
     */
 
-    let inputs;
-    let nombre;
-    let fecha;
-    let dni;
-    let nombreRegexp;
-    let inputNombre;
-    let inputFecha;
-    let inputDni;
+    // Arrays donde se almacenarán las expresiones regulares y el error correspondiente 
+    // en caso de no ser válido
 
-    let validarNombre = () => {
-
-        inputNombre = document.getElementById("inputNombre");
-        inputFecha = document.getElementById("inputFecha");
-        inputDni = document.getElementById("inputDni");
-
-        nombreRegexp = new RegExp("a-z");
-
-        if (!nombreRegexp.test(inputNombre)) {
-            nombre.style.backgroundColor = "red";
-        }
-        else{
-            nombre.style.backgroundColor = "green";
-        }
-    }
-
-    let validarFecha = () =>{
-
-        fecha.style.backgroundColor = "red";
-
-    }
-
-    let validarDni = () =>{
-
-        dni.style.backgroundColor = "red";
-
-    }
-
-    let inicio = () => {
-
-        
-
-        inputs = document.getElementsByTagName("input");
-        nombre = inputs[0];
-        fecha = inputs[1];
-        dni = inputs[2];
-
-        nombre.addEventListener("blur", validarNombre);
-        fecha.addEventListener("blur", validarFecha);
-        dni.addEventListener("blur", validarDni);
-
-    }
-
-
+    let regExpNombre = new Array(new RegExp("^[a-zA-Zá-úÁ-Ú ]+$"), "Error. El nombre no es válido");
+    let regExpFechaNacimiento = new Array(new RegExp("^[0-9]{2}/{1}|-{1}[0-9]{2}/{1}|-{1}[0-9]{4}$"), "Error. La fecha de nacimiento no es válida!");
+    let regExpDni= new Array(new RegExp("(^[0-9]{8}-{1}| {1}[A-Za-z]{1}$)|(^[0-9]{8}[A-Za-z]{1}$)"), "Error. El dni no es válido!", "TRWAGMYFPDXBNJZSQVHLCKET");
+    
 
 
     document.addEventListener("DOMContentLoaded", inicio);
