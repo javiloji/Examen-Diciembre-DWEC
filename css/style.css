@@ -1,0 +1,15 @@
+#formularioEmpleado{
+    display: grid;
+    grid-template-columns: min-content min-content;
+    gap: 15px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#detodounpoco{
+    margin-top: 20px;
+}
+
+#boton{
+    margin-top: 20px;
+}
