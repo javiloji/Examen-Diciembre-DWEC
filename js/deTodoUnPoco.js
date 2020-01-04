@@ -9,13 +9,12 @@
      * 
     */
 
-    let botonInforma;
-    let botonSalir;
-    let diaActual;
+    /**
+     * Declaro las variables globales
+     */
+
     let parrafoDia;
     let parrafoHora;
-    let horaActual;
-    let minutosActuales;
 
     /*
 
@@ -26,9 +25,9 @@
 
     let informa = () => {
 
-        diaActual = new Date;
-        horaActual = diaActual.getHours();
-        minutosActuales = diaActual.getMinutes();
+        let diaActual = new Date;
+        let horaActual = diaActual.getHours();
+        let minutosActuales = diaActual.getMinutes();
 
         switch (diaActual.getDay()) {
             case 1:
@@ -87,10 +86,10 @@
         parrafoDia = document.getElementById("parrafoDia");
         parrafoHora = document.getElementById("parrafoHora")
 
-        botonInforma = document.getElementById("informa");
+        let botonInforma = document.getElementById("informa");
         botonInforma.addEventListener("click", informa);
 
-        botonSalir = document.getElementById("salir");
+        let botonSalir = document.getElementById("salir");
         botonSalir.addEventListener("click", salir);
 
     }
