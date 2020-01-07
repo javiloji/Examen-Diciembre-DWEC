@@ -1,5 +1,5 @@
 {
-    
+
     let salir = () => {
 
         window.close();
@@ -19,7 +19,7 @@
 
         inputNombre.addEventListener("blur",function() {
             if(!comprobarNombre(inputNombre.value)){
-                errorNombre.innerHTML = regExpNombre[1];
+                errorNombre.innerHTML = regExp.regExpNombre[1];
             }
             else{
                 errorNombre.innerHTML = "";
@@ -28,7 +28,7 @@
 
         inputFecha.addEventListener("blur",function() {
             if(!comprobarFechaNacimiento(inputFecha.value)){
-                errorFecha.innerHTML = regExpFechaNacimiento[1];
+                errorFecha.innerHTML = regExp.regExpFechaNacimiento[1];
             }
             else{
                 errorFecha.innerHTML = "";
@@ -47,21 +47,21 @@
         botonCrearEmpleado.addEventListener("click",function(){
 
             if(!comprobarNombre(inputNombre.value)){
-                errorNombre.innerHTML = regExpNombre[1];
+                errorNombre.innerHTML = regExp.regExpNombre[1];
             }
             else{
                 errorNombre.innerHTML = "";
             }
 
             if(!comprobarFechaNacimiento(inputFecha.value)){
-                errorFecha.innerHTML = regExpFechaNacimiento[1];
+                errorFecha.innerHTML = regExp.regExpFechaNacimiento[1];
             }
             else{
                 errorFecha.innerHTML = "";
             }
             
             if(!comprobarDni(inputDni.value)){
-                errorDni.innerHTML = regExpDni[1];
+                errorDni.innerHTML = regExp.regExpDni[1];
             }
             else{
                 errorDni.innerHTML = "";
