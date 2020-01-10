@@ -27,7 +27,7 @@ let comprobarNombre = function (nombre) {
 // Comprueba que la fecha sea correcto
 
 let comprobarFechaNacimiento = function (fechaNacimiento) {
-    return (regExp.regExpFechaNacimiento[0].test(fechaNacimiento) && new Date(fechaNacimiento) != "Invalid Date");
+    return (regExp.regExpFechaNacimiento[0].test(fechaNacimiento) && new Date(fechaNacimiento) != "Fecha no válida");
 }
 
 // Comprueba que el Dni sea correcto

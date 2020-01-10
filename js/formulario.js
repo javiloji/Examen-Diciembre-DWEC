@@ -6,7 +6,7 @@
 
     }
 
-    
+
     let inicio = () => {
 
         let inputNombre = document.getElementById("inputNombre");
@@ -17,66 +17,57 @@
         let errorDni = document.getElementById("errorDni");
         let botonCrearEmpleado = document.getElementById("botonCrearEmpleado");
 
-        inputNombre.addEventListener("blur",function() {
-            if(!comprobarNombre(inputNombre.value)){
+        chequearNombre = () => {
+            if (!comprobarNombre(inputNombre.value)) {
                 errorNombre.innerHTML = regExp.regExpNombre[1];
             }
-            else{
+            else {
                 errorNombre.innerHTML = "";
             }
-        });
+        }
 
-        inputFecha.addEventListener("blur",function() {
-            if(!comprobarFechaNacimiento(inputFecha.value)){
+        chequearFecha = () => {
+            if (!comprobarFechaNacimiento(inputFecha.value)) {
                 errorFecha.innerHTML = regExp.regExpFechaNacimiento[1];
             }
-            else{
+            else {
                 errorFecha.innerHTML = "";
             }
-        });
+        }
 
-        inputDni.addEventListener("blur",function() {
-            if(!comprobarDni(inputDni.value)){
-                errorDni.innerHTML = regExpDni[1];
-            }
-            else{
-                errorDni.innerHTML = "";
-            }
-        });
-        
-        botonCrearEmpleado.addEventListener("click",function(){
-
-            if(!comprobarNombre(inputNombre.value)){
-                errorNombre.innerHTML = regExp.regExpNombre[1];
-            }
-            else{
-                errorNombre.innerHTML = "";
-            }
-
-            if(!comprobarFechaNacimiento(inputFecha.value)){
-                errorFecha.innerHTML = regExp.regExpFechaNacimiento[1];
-            }
-            else{
-                errorFecha.innerHTML = "";
-            }
-            
-            if(!comprobarDni(inputDni.value)){
+        chequearDni = () => {
+            if (!comprobarDni(inputDni.value)) {
                 errorDni.innerHTML = regExp.regExpDni[1];
             }
-            else{
+            else {
                 errorDni.innerHTML = "";
             }
+        }
 
-            if(comprobarNombre(inputNombre.value) && comprobarFechaNacimiento(inputFecha.value) && comprobarDni(inputDni.value)){
+        inputNombre.addEventListener("blur", chequearNombre);
 
-                let nuevoEmpleado = new Empleado(inputNombre.value,inputFecha.value,inputDni.value);
+        inputFecha.addEventListener("blur", chequearFecha);
+
+        inputDni.addEventListener("blur", chequearDni);
+
+        botonCrearEmpleado.addEventListener("click", function () {
+
+            chequearNombre();
+
+            chequearFecha();
+
+            chequearDni();
+
+            if (errorNombre.innerHTML === "" && errorFecha.innerHTML === "" && errorDni.innerHTML === "") {
+
+                let nuevoEmpleado = new Empleado(inputNombre.value, inputFecha.value, inputDni.value);
                 nuevoEmpleado.crearNuevaVentana();
                 inputNombre.value = "";
                 inputDni.value = "";
                 inputFecha.value = "";
 
             }
-            
+
         });
 
 
