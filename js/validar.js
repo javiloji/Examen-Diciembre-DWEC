@@ -12,9 +12,9 @@
 // Arrays donde se almacenarán las expresiones regulares y el error correspondiente 
 // en caso de no ser válido
 let regExp = {
-    regExpNombre : [new RegExp("^[a-zA-Zá-úÁ-Ú ]+$"), "Error. El nombre no es válido"],
-    regExpFechaNacimiento : [new RegExp("^[0-9]{2}/{1}|-{1}[0-9]{2}/{1}|-{1}[0-9]{4}$"), "Error. La fecha de nacimiento no es válida!"],
-    regExpDni : [new RegExp("(^[0-9]{8}-{1}| {1}[A-Za-z]{1}$)|(^[0-9]{8}[A-Za-z]{1}$)"), "Error. El dni no es válido!", "TRWAGMYFPDXBNJZSQVHLCKET"]
+    regExpNombre : [new RegExp("^[a-zA-Zá-úÁ-Ú ]+$"), "El nombre debe ser correcto"],
+    regExpFechaNacimiento : [new RegExp("^[0-9]{2}/{1}|-{1}[0-9]{2}/{1}|-{1}[0-9]{4}$"), "La fecha de nacimiento debe ser correcta"],
+    regExpDni : [new RegExp("(^[0-9]{8}-{1}| {1}[A-Za-z]{1}$)|(^[0-9]{8}[A-Za-z]{1}$)"), "El dni debe ser correcto", "TRWAGMYFPDXBNJZSQVHLCKET"]
 
 }
 
