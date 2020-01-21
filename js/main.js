@@ -69,9 +69,9 @@
             <h1>Javier Lopera Jiménez</h1>
             <h2>Examen Diciembre 2019</h2>
             <form id="formularioEmpleado">
-                <label for="nombre">Nombre del empleado: </label><input id="inputNombre" type="text"><span id="errorNombre" style="color:red;"></span>
-                <label for="fecha">Fecha de nacimiento: </label><input id="inputFecha" type="text"><span id="errorFecha" style="color:red;"></span>
-                <label for="dni">DNI:  </label><input  id="inputDni" type="text"><span id="errorDni" style="color:red;"></span>
+                <label for="nombre">Nombre del empleado: </label><input id="nombre" type="text"><span id="errorNombre" style="color:red;"></span>
+                <label for="fecha">Fecha de nacimiento: </label><input id="fecha" type="text"><span id="errorFecha" style="color:red;"></span>
+                <label for="dni">DNI:  </label><input  id="dni" type="text"><span id="errorDni" style="color:red;"></span>
                 
             </form>
             <button id="botonCrearEmpleado">Nuevo Empleado</button><br><br>

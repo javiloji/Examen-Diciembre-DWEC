@@ -9,9 +9,9 @@
 
     let inicio = () => {
 
-        let inputNombre = document.getElementById("inputNombre");
-        let inputFecha = document.getElementById("inputFecha");;
-        let inputDni = document.getElementById("inputDni");;
+        let inputNombre = document.getElementById("nombre");
+        let inputFecha = document.getElementById("fecha");;
+        let inputDni = document.getElementById("dni");;
         let errorNombre = document.getElementById("errorNombre");
         let errorFecha = document.getElementById("errorFecha");
         let errorDni = document.getElementById("errorDni");
