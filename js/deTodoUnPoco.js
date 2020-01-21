@@ -86,11 +86,9 @@
         parrafoDia = document.getElementById("parrafoDia");
         parrafoHora = document.getElementById("parrafoHora")
 
-        let botonInforma = document.getElementById("informa");
-        botonInforma.addEventListener("click", informa);
+        document.getElementById("informa").addEventListener("click", informa);
 
-        let botonSalir = document.getElementById("salir");
-        botonSalir.addEventListener("click", salir);
+        document.getElementById("salir").addEventListener("click", salir);
 
     }
 

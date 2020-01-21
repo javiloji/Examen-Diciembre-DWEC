@@ -85,11 +85,8 @@
 
     let inicio = () => {
 
-        let enlace = document.getElementById("detodounpoco");
-        enlace.addEventListener("click", deTodoUnPoco);
-
-        let empleado = document.getElementById("boton");
-        empleado.addEventListener("click", nuevoEmpleado);
+        document.getElementById("detodounpoco").addEventListener("click", deTodoUnPoco);
+        document.getElementById("boton").addEventListener("click", nuevoEmpleado);
 
     }
 

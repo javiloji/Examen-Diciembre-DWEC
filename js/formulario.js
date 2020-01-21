@@ -70,9 +70,7 @@
 
         });
 
-
-        let botonSalir = document.getElementById("salir");
-        botonSalir.addEventListener("click", salir);
+        document.getElementById("salir").addEventListener("click", salir);
 
     }
 
