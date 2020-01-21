@@ -42,9 +42,9 @@
                 <h1>Esta pagina necesita activar el contenido JavaScript</h1>
             </noscript>
             <h2>Datos del empleado: </h2>
-            <b>Nombre: </b>` + this.nombre + `
-            <br><b>Fecha de nacimiento: </b>` + this.fechaNacimiento + `
-            <br><b>DNI: </b>` + this.dni + `
+            <b>Nombre: </b> ${this.nombre} 
+            <br><b>Fecha de nacimiento: </b> ${this.fechaNacimiento}
+            <br><b>DNI: </b>${this.dni}
         </body>
         </html>
         `);
