@@ -25,7 +25,7 @@
 
     let informa = () => {
 
-        let diaActual = new Date;
+        let diaActual = new Date();
         let horaActual = diaActual.getHours();
         let minutosActuales = diaActual.getMinutes();
 
